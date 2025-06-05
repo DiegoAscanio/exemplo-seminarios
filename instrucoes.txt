@@ -1,0 +1,30 @@
+1. Abrir github.com/diegoascanio/template-aulas
+2. Clicar em usar template
+2.1 Create a new repository
+2.2 Atribuir um nome ex.: 'exemplo-seminarios'
+2.3 Clicar em criar repositorio
+3. Ir em configurações (settings)
+3.1 Ir em paginas (pages)
+3.2 Em Source (fonte), selecionar 'Github Actions'
+4. Clonar repositorio
+4.1 clicar em code, selecionar https (ssh)
+4.2 clicar em copy url to clipboard
+4.3 Abro o terminal e rodo o comando: git clone https://github.com/DiegoAscanio/exemplo-seminarios.git
+5. Ir para o repositorio
+5.1 cd exemplo-seminarios
+6. fazer primeira execução do arquivo slides.sh: ./slides.sh
+6.1 O docker é instalado se não existir
+7. Iniciar o servidor web
+7.1 executar: ./slides.sh start-web-server
+8. Compilar os slides:
+8.1 ./slides.sh build
+9. Acessar os slides localmente em localhost:8000
+10. sugestao criar slides no formato 'slides/0X.md'
+11. adiciono arquivos da raiz do repositorio e efetuando alterações no github pages:
+11.1 git add .
+11.2 git commit -m "MENSAGEM"
+11.3 git push
+12. Só esperar dar deploy
+13. Fechar o servidor web
+13.1 ./slides.sh kill-web-server
+    
