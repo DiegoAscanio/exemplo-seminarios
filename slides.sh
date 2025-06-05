@@ -26,7 +26,7 @@ install_docker() {
         # we're probably running inside a container, so just start dockerd
         # in background redirecting all output to /dev/null
         echo "Starting Docker service..."
-        sudo dockerd > /dev/null 2>&1 &
+        sudo su -c "dockerd > /dev/null 2>&1" &
     fi
     # add current user to the docker group
     sudo usermod -aG docker $USER
